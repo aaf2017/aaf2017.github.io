@@ -1,0 +1,66 @@
+/* Paul Irish reset */
+html {
+  box-sizing: border-box;
+}
+  
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+/*Header*/
+
+/*Navbar*/
+#navbarSupportedContent {
+  justify-content: flex-end;
+}
+.navbar-dark .navbar-brand {
+  font-family: 'Parisienne', cursive;
+  font-size: 42px;
+  font-weight: 400;
+  color: #ebd8b7;
+  margin-left: 30px;
+}
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(235, 216, 183, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.custom-toggler {
+  border: none;
+}
+.navbar-nav .nav-item .nav-link {
+  color: #92967d;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+/*Header-banner*/
+.header-banner {
+    background-image:
+    url(./images/header-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+    height: 550px;  
+    display: flex;
+    align-items: flex-end;
+    justify-content:space-evenly;
+}
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  color: #92967d;
+}
+
+/*Main*/
+.main {
+margin: 5em 10em 5em 10em;
+}
+h5 {
+  font-family: 'Parisienne', cursive;
+  font-weight: bolder;
+  font-size: 28px;
+}
+
+/*Footer*/
+
