@@ -37,7 +37,10 @@ html {
 /*Header-banner*/
 .header-banner {
     background-image:
-    url(./images/header-banner.jpg);
+    radial-gradient(
+      ellipse at center,rgba(8, 8, 8, 0), rgb(12, 10, 9)
+    ),
+    url('./images/header-banner.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;    
