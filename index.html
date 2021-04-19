@@ -1,99 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Parisienne&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Parisienne&display=swap");
     </style>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
     <title>Pointe</title>
     <link rel="stylesheet" href="style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
+    <header>
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">Pointe</a>
+        <button
+          class="navbar-toggler ml-auto custom-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <header>
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-      <a class="navbar-brand" href="#">Pointe</a>
-      <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Schedule</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Pricing</a>
-          </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+                >Pricing</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="header-banner">
+        <h4 class="banner-text">Classical Ballet Studio</h4>
       </div>
-    </nav>
-    <div class="header-banner">
-      <h4>Classical Ballet Studio</h4>
-    </div>
-  </header>
+    </header>
 
-  <main class="main">
-    <section class="method">
-      <h5 class="method method-header">Our Method</h5>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ratione blanditiis consequatur eaque aspernatur sapiente! Cum eveniet id reiciendis, autem perspiciatis molestiae fugit pariatur hic aperiam atque eligendi suscipit alias possimus voluptate. Laborum quo blanditiis nobis dignissimos consequuntur maiores architecto, accusamus vel consectetur nesciunt officiis tempore cum, quisquam placeat inventore repellendus voluptate cupiditate non suscipit modi quos nostrum rerum libero. Ab minus reiciendis fuga labore enim magnam, reprehenderit praesentium aperiam.</p>
-    </section>
-    <section class="studio">
-      <h5 class="studio-header">Our Studio</h5>
-      Carousel
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, deleniti veritatis! Amet cum iste animi sapiente incidunt, molestiae aperiam ipsum tenetur doloremque itaque tempora neque ut atque quas consectetur, velit eos quam? Eum aliquam non excepturi quos nihil nam facilis.</p>
-    </section>
-    <section class="classes">
-      <h5 class="classes-header">Classes</h5>
-      <div class="classes-row">
-        <div class="classes-container">1</div>
-        <div class="classes-container">2</div>
-        <div class="classes-container">3</div>
-      </div>
-    </section>
-    <section class="founders">
-      <h5 class="founders-header">We Are The Founders</h5>
-      <div class="founders-text-block text1">
-        <h6>Joanna Smith</h6>
-        <p class="bio">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt harum sapiente totam molestias optio consectetur dicta accusamus aliquam eligendi, asperiores voluptates fugit praesentium, beatae dignissimos deleniti magni nisi, nemo eos! Iste rem quas incidunt dolor numquam praesentium.</p>
-      </div>
-      <div class="founders-image-block img1">Image 1</div>
-      <div class="founders-image-block img2">Image 2</div>
-      <div class="founders-text-block text2">
-        <h6>John Smith</h6>
-        <p class="bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque tenetur totam autem. Accusantium minus commodi nam veniam, quia blanditiis! Excepturi adipisci molestiae aspernatur facere error labore esse eum reiciendis nihil a. Fugiat accusamus assumenda enim commodi porro reiciendis, nobis nostrum at illum earum ea dicta dolore eos odio repellendus sed temporibus dolorum magni est aliquam deserunt sit.</p>
-      </div>
+    <main class="main">
+      <section class="method">
+        <h5 class="method method-header">
+          <span class="divider"><a href="./images/divider.svg"></a></span>Our
+          Method
+        </h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ratione
+          blanditiis consequatur eaque aspernatur sapiente! Cum eveniet id
+          reiciendis, autem perspiciatis molestiae fugit pariatur hic aperiam
+          atque eligendi suscipit alias possimus voluptate. Laborum quo
+          blanditiis nobis dignissimos consequuntur maiores architecto,
+          accusamus vel consectetur nesciunt officiis tempore cum, quisquam
+          placeat inventore repellendus voluptate cupiditate non suscipit modi
+          quos nostrum rerum libero. Ab minus reiciendis fuga labore enim
+          magnam, reprehenderit praesentium aperiam.
+        </p>
+      </section>
+      <section class="studio">
+        <h5 class="studio-header">Our Studio</h5>
+        <!--Studio Image Slider-->
+        <div class="container">
+          <div class="slider">
+            <div class="slide-track">
+              <div class="slide">
+                <img src="./images/slider-img1.jpg" alt="Studio Image 1" />
+              </div>
+              <div class="slide">
+                <img src="./images/slider-img2.jpg" alt="Studio Image 2" />
+              </div>
+              <div class="slide">
+                <img src="./images/slider-img3.jpg" alt="Studio Image 3" />
+              </div>
+              <div class="slide">
+                <img src="./images/slider-img4.jpg" alt="Studio Image 4" />
+              </div>
+              <div class="slide">
+                <img src="./images/slider-img1.jpg" alt="Studio Image 1" />
+              </div>
+              <div class="slide">
+                <img src="./images/slider-img2.jpg" alt="Studio Image 2" />
+              </div>
+              <div class="slide">
+                <img src="./images/slider-img3.jpg" alt="Studio Image 3" />
+              </div>
+              <div class="slide">
+                <img src="./images/slider-img4.jpg" alt="Studio Image 4" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <p id="studio-text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus,
+          deleniti veritatis! Amet cum iste animi sapiente incidunt, molestiae
+          aperiam ipsum tenetur doloremque itaque tempora neque ut atque quas
+          consectetur, velit eos quam? Eum aliquam non excepturi quos nihil nam
+          facilis.
+        </p>
+      </section>
+      <section class="classes">
+        <h5 class="classes-header">Classes</h5>
+        <div class="classes-row">
+          <div class="classes-container">1</div>
+          <div class="classes-container">2</div>
+          <div class="classes-container">3</div>
+        </div>
+      </section>
+      <section class="founders">
+        <h5 class="founders-header">We Are The Founders</h5>
+        <div class="founders-text-block text1">
+          <h6>Joanna Smith</h6>
+          <p class="bio">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            harum sapiente totam molestias optio consectetur dicta accusamus
+            aliquam eligendi, asperiores voluptates fugit praesentium, beatae
+            dignissimos deleniti magni nisi, nemo eos! Iste rem quas incidunt
+            dolor numquam praesentium.
+          </p>
+        </div>
+        <div class="founders-image-block img1">Image 1</div>
+        <div class="founders-image-block img2">Image 2</div>
+        <div class="founders-text-block text2">
+          <h6>John Smith</h6>
+          <p class="bio">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque
+            tenetur totam autem. Accusantium minus commodi nam veniam, quia
+            blanditiis! Excepturi adipisci molestiae aspernatur facere error
+            labore esse eum reiciendis nihil a. Fugiat accusamus assumenda enim
+            commodi porro reiciendis, nobis nostrum at illum earum ea dicta
+            dolore eos odio repellendus sed temporibus dolorum magni est aliquam
+            deserunt sit.
+          </p>
+        </div>
+      </section>
+    </main>
 
-    </section>
-  </main>
+    <footer class="footer">
+      <div class="copyright">Copyright &copy; 2021 Anna Fateeva</div>
+    </footer>
 
-  <footer>
-
-  </footer>
-
-  <!-- Bootstrap Bundle with Popper -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
     <script>
-      $(window).scroll(function(){
-      var scroll = $(window).scrollTop();
-      if(scroll < 500){
-          $('.fixed-top').css('background', 'transparent');
-      } else{
-          $('.fixed-top').css('background', 'rgba(0, 0, 0, 1)');
-      }
-  });
-  </script>
-</body>
-
+      $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll < 500) {
+          $(".fixed-top").css("background", "transparent");
+        } else {
+          $(".fixed-top").css("background", "rgba(0, 0, 0, 1)");
+        }
+      });
+    </script>
+  </body>
 </html>
