@@ -10,6 +10,10 @@ html {
   margin: 0;
   padding: 0;
 }
+/*BODY*/
+body {
+  background-color: #ebd8b7;
+}
 /*HEADER*/
 
 /*Navbar*/
@@ -63,6 +67,24 @@ html {
 .main {
   margin: 5%;
 }
+
+
+#Layer_1 {
+  fill: #92967d;
+  height: 50px;
+  width: 250px;
+}
+.box {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 120px 120px 120px;
+  align-items: center;
+  justify-content: space-between;
+}
+.box :svg {
+  align-self: center;
+}
+
 h5 {
   font-family: 'Parisienne', cursive;
   font-weight: bolder;
@@ -70,18 +92,21 @@ h5 {
   grid-area: heading;
   text-align: center;
   padding: 10px;
+  margin-top: 30px;
 }
+
 p {
   text-align: center;
 }
-
+p#studio-text {
+  margin-top: 30px;
+}
 /*Studio Image Slider*/
-
 .slider {
-  height: 250px;
+  height: 200px;
   margin: auto;
   position: relative;
-  width: 90%;
+  width: 80%;
   display: grid;
   place-items: center;
 }
@@ -119,7 +144,8 @@ img:hover {
 }
 .slider::before,
 .slider::after {
-  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, rgba(146, 150, 125, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  /*border-radius: 100% 0% 0% 100% / 50% 100% 0% 50%;*/
   content: '';
   height: 100%;
   position: absolute;
@@ -144,7 +170,33 @@ img:hover {
   justify-content: space-evenly;
   align-items: center;
 }
+.card-title {
+  font-family: 'Parisienne', cursive;
+  font-weight: bolder;
+  font-size: 20px;
+  grid-area: heading;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+}
+.card-text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+  font-size: 12px;
+}
+.card {
+  width: 300px;
+  height: 150px;
+  background-color: #92967d;
+  opacity: 0.8;
+  margin: 0;
+  padding: 0;
+}
+/*.card {
+  background: linear-gradient(to rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+}*/
 .copyright {
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
+  margin-top: 40px;
 }
