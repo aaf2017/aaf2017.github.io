@@ -152,9 +152,6 @@ img:hover {
   top: 0;
   transform: rotateZ(180deg);
 }
-.card {
-  height: auto;
-}
 .card-text {
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
