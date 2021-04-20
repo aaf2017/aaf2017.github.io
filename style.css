@@ -65,26 +65,18 @@ body {
 
 /*MAIN*/
 .main {
-  margin: 5%;
+  margin: 10%;
 }
-
-
+.text-center {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
 #Layer_1 {
   fill: #92967d;
   height: 50px;
   width: 250px;
 }
-.box {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 120px 120px 120px;
-  align-items: center;
-  justify-content: space-between;
-}
-.box :svg {
-  align-self: center;
-}
-
 h5 {
   font-family: 'Parisienne', cursive;
   font-weight: bolder;
@@ -94,7 +86,6 @@ h5 {
   padding: 10px;
   margin-top: 30px;
 }
-
 p {
   text-align: center;
 }
@@ -192,9 +183,6 @@ img:hover {
   margin: 0;
   padding: 0;
 }
-/*.card {
-  background: linear-gradient(to rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
-}*/
 .copyright {
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
