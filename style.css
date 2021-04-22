@@ -72,10 +72,18 @@ body {
   justify-content: center; 
   align-items: center;
 }
-#Layer_1 {
+svg#divider1 {
   fill: #92967d;
   height: 50px;
   width: 250px;
+  margin-top: -70px;
+  margin-bottom: 0;
+}
+svg#divider2 {
+  fill: #92967d;
+  height: 50px;
+  width: 250px;
+  margin-top: 70px 0 50px 0;
 }
 h5 {
   font-family: 'Parisienne', cursive;
@@ -105,6 +113,7 @@ p#studio-text {
   display: flex;
   width: 2000px;
   animation: scroll 80s linear infinite;
+  overflow-x: hidden;
 }
 .slide-track:hover {
   animation-play-state: paused;
@@ -152,9 +161,13 @@ img:hover {
   top: 0;
   transform: rotateZ(180deg);
 }
+.card-body {
+  align-content: center;
+  justify-items: center;
+}
 .card-text {
   font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
 }
 .card-title {
   font-family: 'Parisienne', cursive;
@@ -166,6 +179,7 @@ img:hover {
   padding: 7px;
   color:  #92967d;
 }
+
 /*FOOTER*/
 .footer {
   height: 125px;
@@ -173,6 +187,9 @@ img:hover {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+}
+.container-footer-cards {
+  display: inline-flex;
 }
 .footer-card-title {
   font-family: 'Parisienne', cursive;
@@ -188,16 +205,62 @@ img:hover {
   font-weight: bolder;
   font-size: 12px;
 }
-#footer-cards {
+#footer-card-address,
+#footer-card-contact {
   width: 300px;
   height: 150px;
   background-color: #92967d;
   opacity: 0.8;
-  margin: 0;
+  margin-top: 50px;
   padding: 0;
+}
+#social-media-icons {
+ justify-content: center;
+}
+.fa {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #ebd8b7;
+}
+.fa-twitter-square {
+  color: #ebd8b7;
 }
 .copyright {
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
   margin-top: 40px;
 }
+
+/*Media Queries*/
+@media screen and (max-width: 992px) {
+  .card-title {
+    font-size: 18px;
+  }
+  .card-text {
+    font-size: 12px;
+  }
+@media screen and (max-width: 770px) {
+  svg#divider1 {
+    margin-top: 20px;
+  }
+  .container-footer-cards {
+    flex-direction:column;
+    padding-top: 12em;
+  }
+  .footer-cards-address {
+    margin-top: 100px;
+}
+}
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+  }
+}
+@media (max-width: 575.98px) {
+  .banner-text {
+    font-size: 24px;
+  }
+}
+}
+
+

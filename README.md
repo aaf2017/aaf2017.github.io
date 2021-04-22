@@ -9,4 +9,3 @@ TEXT DIVIDER
 
 SLIDER is INSPIRED by
 The Mute Dev : https://www.youtube.com/watch?v=3Z780EOzIQs
-
