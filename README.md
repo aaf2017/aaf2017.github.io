@@ -10,9 +10,13 @@ GITHUB source code link:
 https://github.com/aaf2017/anna-fateeva.balletstudio.github.io
 
 USER STORIES:
+
 USER A
+
 As a user, who is searching for a place to take classical ballet classes, I want to be able to clearly understand what kind of ballet teaching technique is used and what type of classes are offered, so I can decide if this place is a good fit for me.
+
 USER B
+
 USER C
 
 CREDITS:
