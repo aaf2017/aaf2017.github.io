@@ -103,6 +103,7 @@ p {
 p#studio-text {
   margin-top: 30px;
 }
+
 /*Studio Image Slider*/
 .slider {
   height: 200px;
@@ -188,57 +189,38 @@ img:hover {
   padding: 7px;
   color:  #92967d;
 }
+
 /*Founders*/
-.founders {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: flex-start;
-  grid-template-areas:
-  "founders-header"
-  "img1"
-  "text1"
-  "text2"
-  "img2";
-  grid-gap: 20px;
-  padding: 25px 0;
+.container-img-bio {
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 3em;
 }
-
-.founders-header {
-  grid-area: heading;
-  text-align: center;
-}
-
-.founders-image-block {
-  width: 260px;
-  height: 140px;
-  display: inline-block;
-}
-
 .img1 {
-  grid-area: img1;
   background-image: url(./images/founders-img1.jpg);
-  background-size: cover;
-  background-position: center center; 
 }
 
 .img2 {
-  grid-area: img2;
   background-image: url(./images/founders-img2.jpg);
+}
+.img1,
+.img2 {
+  width: 300;
+  height: 160px;
+  padding-left: 0;
   background-size: cover;
-  background-position: center bottom; 
+  background-position: center center;
+  border-radius: 0.25rem;
+  -webkit-box-shadow: 10px 10px 16px 1px rgba(20,21,19,0.62); 
+  box-shadow: 10px 10px 16px 1px rgba(20,21,19,0.62);
 }
-
-.founders-text-block.bio {
-  width: 80%;
-  text-align:start;
+.founder-name {
+  color:  #565f2c;
+  font-weight: bolder;
 }
-
-.founders-text-block.text1 {
-  grid-area: text1;
-}
-
-.founders-text-block.text2 {
-  grid-area: text2;
+.bio {
+  text-align:left;
+  font-size: 14px;;
 }
 
 /*FOOTER*/
