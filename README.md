@@ -2,6 +2,12 @@
 PROJECT DESCRIPTION:
 Basic professional website for a classical ballet studio.
 
+<<<<<<< HEAD
+=======
+PROJECT DESCRIPTION:
+Basic professional website for a classical ballet studio.
+
+>>>>>>> e762d256168bdf308f84627fcdebc9c079254cdd
 HOST:
 http://aaf2017.github.io/anna-fateeva.balletstudio.github.io
 
@@ -9,9 +15,19 @@ GITHUB source code link:
 https://github.com/aaf2017/anna-fateeva.balletstudio.github.io
 
 USER STORIES:
+<<<<<<< HEAD
 USER A
 As a user, who is searching for a place to take classical ballet classes, I want to be able to clearly understand what kind of ballet teaching technique is used and what type of classes are offered, so I can decide if this place is a good fit for me.
 USER B
+=======
+
+USER A
+
+As a user, who is searching for a place to take classical ballet classes, I want to be able to clearly understand what kind of ballet teaching technique is used and what type of classes are offered, so I can decide if this place is a good fit for me.
+
+USER B
+
+>>>>>>> e762d256168bdf308f84627fcdebc9c079254cdd
 USER C
 
 CREDITS:
