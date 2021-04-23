@@ -33,3 +33,12 @@ Ornament vector created by freepik - www.freepik.com
 SLIDER is INSPIRED by The Mute Dev : 
 
 https://www.youtube.com/watch?v=3Z780EOzIQs
+
+IMAGES
+
+Founders-image-block 
+img1 <a href="https://www.freepik.com/photos/background">Background photo created by master1305 - www.freepik.com</a>
+img2 <a href="https://www.freepik.com/photos/background">Background photo created by master1305 - www.freepik.com</a>
+
+
+

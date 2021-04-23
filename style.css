@@ -42,6 +42,9 @@ body {
 .navbar-nav .nav-item .nav-link:hover {
   color: #ebd8b7;
 }
+#navbar-contact {
+  background-color: black;
+}
 /*Header-banner*/
 .header-banner {
   background-image:
@@ -164,6 +167,7 @@ img:hover {
   top: 0;
   transform: rotateZ(180deg);
 }
+/*Classes*/
 .card-body {
   align-content: center;
   justify-items: center;
@@ -184,7 +188,58 @@ img:hover {
   padding: 7px;
   color:  #92967d;
 }
+/*Founders*/
+.founders {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: flex-start;
+  grid-template-areas:
+  "founders-header"
+  "img1"
+  "text1"
+  "text2"
+  "img2";
+  grid-gap: 20px;
+  padding: 25px 0;
+}
 
+.founders-header {
+  grid-area: heading;
+  text-align: center;
+}
+
+.founders-image-block {
+  width: 260px;
+  height: 140px;
+  display: inline-block;
+}
+
+.img1 {
+  grid-area: img1;
+  background-image: url(./images/founders-img1.jpg);
+  background-size: cover;
+  background-position: center center; 
+}
+
+.img2 {
+  grid-area: img2;
+  background-image: url(./images/founders-img2.jpg);
+  background-size: cover;
+  background-position: center bottom; 
+}
+
+.founders-text-block.bio {
+  width: 80%;
+  text-align:start;
+}
+
+.founders-text-block.text1 {
+  grid-area: text1;
+}
+
+.founders-text-block.text2 {
+  grid-area: text2;
+}
 /*FOOTER*/
 footer {
   background-color: #e6d5b8;
@@ -277,6 +332,7 @@ footer {
   .container-footer-cards {
     margin-left: 5px;
     margin-right: 5px;
+
   }
 }
 }
