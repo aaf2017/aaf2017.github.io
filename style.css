@@ -240,6 +240,7 @@ img:hover {
 .founders-text-block.text2 {
   grid-area: text2;
 }
+
 /*FOOTER*/
 footer {
   background-color: #e6d5b8;
@@ -332,7 +333,6 @@ footer {
   .container-footer-cards {
     margin-left: 5px;
     margin-right: 5px;
-
   }
 }
 }
