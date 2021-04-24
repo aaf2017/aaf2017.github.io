@@ -441,6 +441,9 @@ svg#contact-link-ballet-shoes:hover {
   card-text:last-child {
     margin-bottom: 40px;
   }
+  .container-form {
+    margin: 0 15px 0 10px;
+  }
 }
 }
 
