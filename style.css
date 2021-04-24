@@ -20,26 +20,36 @@ body {
 #navbarSupportedContent {
   justify-content: flex-end;
 }
-.navbar-dark .navbar-brand {
+.navbar-dark 
+.navbar-brand {
   font-family: 'Parisienne', cursive;
   font-size: 42px;
   font-weight: 400;
   color: #ebd8b7;
   margin-left: 30px;
 }
-.navbar-dark .navbar-toggler-icon {
+.navbar-dark 
+.navbar-brand:hover {
+  color: rgba(123, 17, 58, 1);
+}
+.navbar-dark 
+.navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(235, 216, 183, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 .custom-toggler {
   border: none;
 }
-.navbar-nav .nav-item .nav-link {
+.navbar-nav 
+.nav-item 
+.nav-link {
   color: #92967d;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
-  margin-right: 30px;
+  margin: 0;
 }
-.navbar-nav .nav-item .nav-link:hover {
+.navbar-nav 
+.nav-item 
+.nav-link:hover {
   color: #ebd8b7;
 }
 #navbar-contact {
@@ -58,12 +68,13 @@ svg#ballet-shoes {
   ),
   url('https://live.staticflickr.com/65535/51132063428_72bf19f42e_o.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;    
   height: 550px;  
   display: flex;
   align-items: flex-end;
   justify-content:space-evenly;
+  padding: 0;
 }
 .banner-text {
   font-family: 'Open Sans', sans-serif;
@@ -114,15 +125,16 @@ p#studio-text {
   height: 200px;
   margin: auto;
   position: relative;
-  width: 80%;
+  width: 100%;
   display: grid;
   place-items: center;
+  overflow-x: hidden;
 }
 .slide-track {
   display: flex;
   width: 2000px;
   animation: scroll 80s linear infinite;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .slide-track:hover {
   animation-play-state: paused;
@@ -201,6 +213,12 @@ img:hover {
   padding-right: 0;
   margin-top: 3em;
 }
+.row
+.row-founder1,
+.row-fownder2 {
+  display: flex;
+  flex-direction: row;
+}
 .img1 {
   background-image: url(./images/founders-img1.jpg);
 }
@@ -210,8 +228,8 @@ img:hover {
 }
 .img1,
 .img2 {
-  width: 300;
-  height: 160px;
+  width: auto;
+  height: 250px;
   padding-left: 0;
   background-size: cover;
   background-position: center center;
@@ -228,11 +246,48 @@ img:hover {
   font-size: 14px;;
 }
 
+/*FORM Contact Us*/
+svg#divider3 {
+  fill: #92967d;
+  height: 50px;
+  width: 250px;
+  margin-top: 130px;
+  margin-bottom: 0;
+}
+.container-form {
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+}
+.container-form-header {
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding: 0;
+}
+.btn-send {
+  background-color:rgba(123, 17, 58, 1);
+  font-family: 'Parisienne', cursive;
+  font-size: 24px;
+}
+.btn-send.btn:hover {
+  background-color: #92967d;
+  color:rgba(123, 17, 58, 1)
+}
+.text-muted {
+  font-size: 16px;;
+}
+
 /*FOOTER*/
 footer {
   background-color: #e6d5b8;
 }
-.footer {
+.container
+.container-fluid {
+  display: flex;
+  height: auto;
+}
+.footer-cards {
+  width: 100vw;
   height: 300px;
   padding: 0;
   display: flex;
@@ -281,6 +336,9 @@ footer {
 .btn[disabled] {
   background-color:rgba(123, 17, 58, 1);
 }
+a#contact-us {
+  color:rgba(123, 17, 58, 1);
+}
 #footer-card-contact-link-btn {
   color:rgba(123, 17, 58, 1);
   display: inline-block;
@@ -308,22 +366,37 @@ svg#contact-link-ballet-shoes:hover {
 
 /*Media Queries*/
 @media screen and (max-width: 992px) {
-  .container-footer-cards {
-    flex-direction:column;
+  .card-body {
+    padding: 0;
   }
   .card-title {
     font-size: 18px;
   }
   .card-text {
     font-size: 12px;
+
   }
-  /*.container-footer-cards {
-    display: grid;
-  }*/
-  .footer {
+  .footer-cards {
     height: auto;
   }
+  #footer-card-address,
+  #footer-card-contact {
+    width: 300px;
+    height: 140px;
+  }
+  #footer-card-contact-link-btn {
+    padding: 0;
+  }
+  .footer-card-title {
+    margin-top: 5px;
+  }
+  svg#contact-link-ballet-shoes {
+    height: 20px;
+  }
 @media screen and (max-width: 770px) {
+  .container-footer-cards {
+    flex-direction:column;
+  }
   svg#divider1 {
     margin-top: 20px;
   }
@@ -344,6 +417,14 @@ svg#contact-link-ballet-shoes:hover {
   .card-deck {
     flex-direction: column;
   }
+  .row
+  .row-founder1,
+  .row-fownder2 {
+    flex-direction: column;
+  }
+  card-text:last-child {
+    margin-bottom: 30px;
+  }
 }
 @media (max-width: 575.98px) {
   .banner-text {
@@ -355,6 +436,10 @@ svg#contact-link-ballet-shoes:hover {
   }
   .founders-text-block {
     width: 100%;
+    margin-top: 3em;
+  }
+  card-text:last-child {
+    margin-bottom: 40px;
   }
 }
 }
