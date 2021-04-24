@@ -422,8 +422,8 @@ svg#contact-link-ballet-shoes:hover {
   .row-fownder2 {
     flex-direction: column;
   }
-  card-text:last-child {
-    margin-bottom: 30px;
+  p.card-text {
+    padding-bottom: 30px;
   }
 }
 @media (max-width: 575.98px) {
